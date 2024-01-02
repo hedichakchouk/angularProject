@@ -1,0 +1,22 @@
+{
+  "members": [
+    {
+      "id":  "123" ,
+      "cin": "00000000" ,
+      "nom": "hedi" ,
+      "type": "student ",
+      "cv": "https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf" ,
+      "createdDate": "10/10/1999 "
+
+    },{
+      "id":"1234",
+      "cin":"00000001",
+      "nom":"bilel",
+      "type":"student",
+      "cv":"https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
+      "createdDate":"17/12/1999"
+    }
+
+  ]
+
+}

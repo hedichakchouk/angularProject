@@ -9,6 +9,8 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
+    "resolveJsonModule": true, //pour activer le parse de json
+    "esModuleInterop": true,//pour activer le parse de json
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
