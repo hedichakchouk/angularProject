@@ -10,7 +10,5 @@ import {Member} from "../../Modeles/Member";
 export class MembreListeComponent {
   dataSource: Member[]= GLOBAL.DB.members;
 
-
-
   displayedColumns: string[] = ['id', 'cin', 'nom', 'type','cv','createdDate','Actions'];
 }

@@ -1,33 +1,33 @@
-<form [formGroup]="form">
+<form [formGroup]="form" (ngSubmit)="showVariabls()">
   <div class="example-container">
 
   <mat-form-field appearance="fill">
     <mat-label>Enter your cin</mat-label>
-    <input matInput placeholder="CIN"  >
+    <input matInput placeholder="CIN"  formControlName="cin" >
 
   </mat-form-field>
 </div>
   <div class="example-container">
     <mat-form-field>
       <mat-label>Enter your name </mat-label>
-      <input matInput placeholder="NAME"  >
+      <input matInput placeholder="NAME" formControlName="name" >
 
     </mat-form-field>
   </div>
   <div class="example-container">
     <mat-form-field>
       <mat-label>Enter your cv type </mat-label>
-      <input matInput placeholder="CV TYPE "  >
+      <input matInput placeholder="CV TYPE " formControlName="cv" >
 
     </mat-form-field>
   </div>
   <div class="example-container">
     <mat-form-field>
       <mat-label>Enter your  </mat-label>
-      <input matInput placeholder="????"  >
+      <input matInput placeholder="type " formControlName="type"  >
 
     </mat-form-field>
-    <button type="submit"> submit </button>
+    <button type="submit" > submit </button>
   </div>
 
 </form>
