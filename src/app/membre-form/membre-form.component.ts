@@ -15,7 +15,7 @@ export class MembreFormComponent implements  OnInit {
 
   }
   membreGlobal!:Member ;
-form!:FormGroup;
+  form!:FormGroup;
 ngOnInit() {
   // 1 Recuperer de id  de la route
   const idcourant = this.activatedRoute.snapshot.params['id'];
@@ -23,6 +23,7 @@ ngOnInit() {
   if (!!idcourant) {
     this.MS.getMemberById(idcourant).subscribe((a)=> {
       this.membreGlobal=a;
+      console.log(a);
       this.intiForm1(a);
     }) /////////
   }

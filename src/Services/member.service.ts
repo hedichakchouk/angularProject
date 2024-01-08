@@ -22,9 +22,10 @@ return  new Observable<void>(observer=>observer.next())
    }
 
   getMemberById(id:string ):Observable<Member> {
-
+    console.log(id);
+console.log(this._tab.filter(item=> item.id == "123" )   ) ;
    //this._tab.filter(item=> item.id == id ) [0]?? null ;  // ?? hethi fil ts manetha si sinon
-    return new Observable(observer => observer.next(this._tab.filter(item=> item.id == id ) [0]?? null ))
+    return new Observable(observer => observer.next(this._tab.filter(item=> item.id == id ) [0] ?? null ))
      // this.httpClient.get<Member> ('http://localhost:8080/api/Members/id') ;  : hethi partie backend juste ken ana backend naamlo requet get njibo bih
   }
 }
