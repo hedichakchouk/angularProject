@@ -14,6 +14,12 @@ const routes: Routes = [
     pathMatch:'full',
     component:MembreListeComponent
   },
+  // : c indique ili id dynamique fil root
+  {
+path:'edit:/id',
+    pathMatch:'full',
+    component:MembreFormComponent
+  },
 
   {
     path : "create",

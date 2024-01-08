@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {MemberService} from "../../Services/member.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-membre-form',
@@ -8,13 +9,21 @@ import {MemberService} from "../../Services/member.service";
   styleUrls: ['./membre-form.component.css']
 })
 export class MembreFormComponent implements  OnInit {
-  constructor(private MS:MemberService) {
+  constructor(private MS:MemberService,private router:Router ) {
     // hethi l etape titsama injection du dependance
+
   }
 
 form!:FormGroup;
 ngOnInit() {
-  this.intiForm()
+  // 1 Recuperer de id  de la route
+  // si  id exeiste  => edit
+ // {
+    //getMemeberByid(id)
+    //initiliser le form
+  //}
+ // sinon  je suuis  dans create  => appel a init form()
+  this.intiForm() ; //creer une inst de form et initialiser
 
 }
 
@@ -31,7 +40,11 @@ ngOnInit() {
   showVariabls() {
   console.log(this.form.value);
   const memberToSave = this.form.value ;
-  this.MS.Save(memberToSave).subscribe(()=>{}) ;
+  id:Math.ceil((Math.random()*1000)).toString();
+
+   this.MS.Save(memberToSave).subscribe(()=>{
+    this.router.navigate(['/members'])
+  }) ;
   // mil front abina il html  w abineha fil variable this.value.form abineha b les donnes , baaad sna3na service ili bech ykharj la requte http
   }
 }
