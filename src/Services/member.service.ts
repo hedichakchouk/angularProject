@@ -21,7 +21,10 @@ return  new Observable<void>(observer=>observer.next())
    // return  (this.httpClient.post<void>('http://localhost:8080/api',member)) ;
    }
 
-  get tab(): Member[] {
-    return this._tab;
+  getMemberById(id:string ):Observable<Member> {
+
+   //this._tab.filter(item=> item.id == id ) [0]?? null ;  // ?? hethi fil ts manetha si sinon
+    return new Observable(observer => observer.next(this._tab.filter(item=> item.id == id ) [0]?? null ))
+     // this.httpClient.get<Member> ('http://localhost:8080/api/Members/id') ;  : hethi partie backend juste ken ana backend naamlo requet get njibo bih
   }
 }

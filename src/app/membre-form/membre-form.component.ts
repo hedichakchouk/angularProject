@@ -19,13 +19,17 @@ ngOnInit() {
   // 1 Recuperer de id  de la route
   const idcourant = this.activatedRoute.snapshot.params['id'];
   console.log(idcourant);
+  if (!!idcourant) {
+    this.MS.getMemberById(idcourant) /////////
+  }
+  else  this.intiForm() ;//creer une inst de form et initialiser
   // si  id exeiste  => edit
  // {
     //getMemeberByid(id)
     //initiliser le form
   //}
  // sinon  je suuis  dans create  => appel a init form()
-  this.intiForm() ; //creer une inst de form et initialiser
+
 
 }
 
