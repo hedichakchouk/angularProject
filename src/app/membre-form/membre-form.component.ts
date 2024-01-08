@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {MemberService} from "../../Services/member.service";
-import {Router} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-membre-form',
@@ -9,7 +9,7 @@ import {Router} from "@angular/router";
   styleUrls: ['./membre-form.component.css']
 })
 export class MembreFormComponent implements  OnInit {
-  constructor(private MS:MemberService,private router:Router ) {
+  constructor(private MS:MemberService,private router:Router  ,private activatedRoute:ActivatedRoute) {
     // hethi l etape titsama injection du dependance
 
   }
@@ -17,6 +17,8 @@ export class MembreFormComponent implements  OnInit {
 form!:FormGroup;
 ngOnInit() {
   // 1 Recuperer de id  de la route
+  const idcourant = this.activatedRoute.snapshot.params['id'];
+  console.log(idcourant);
   // si  id exeiste  => edit
  // {
     //getMemeberByid(id)
