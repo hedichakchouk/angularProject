@@ -12,7 +12,7 @@ import {HttpClient} from "@angular/common/http";
 export class MemberService {
   constructor(private httpClient: HttpClient ) {
   }
-private _tab:Member[]=GLOBAL.DB.members;
+  _tab:Member[]=GLOBAL.DB.members;
   Save(member:any) : Observable<void> {
     // generer une requtee http en mode poste vers le backend
 this._tab.push(member);
@@ -27,5 +27,11 @@ console.log(this._tab.filter(item=> item.id == "123" )   ) ;
    //this._tab.filter(item=> item.id == id ) [0]?? null ;  // ?? hethi fil ts manetha si sinon
     return new Observable(observer => observer.next(this._tab.filter(item=> item.id == id ) [0] ?? null ))
      // this.httpClient.get<Member> ('http://localhost:8080/api/Members/id') ;  : hethi partie backend juste ken ana backend naamlo requet get njibo bih
+  }
+
+  deleteMemberById( id :String ) : Observable<void>{
+   this._tab= this._tab.filter(item=>item.id!=id) ;
+    return new Observable(observer => observer.next());
+   // return this.httpClient.delete<void>('http://localhost:8080/api/members/$id') ;
   }
 }

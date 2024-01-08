@@ -53,7 +53,13 @@ ngOnInit() {
       type : new FormControl(null,[]) ,
     })
   }
-
+ // openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
+   // this.dialog.open(DialogAnimationsExampleDialog, {
+     // width: '250px',
+     // enterAnimationDuration,
+     // exitAnimationDuration,
+    //});
+  //}
 
   showVariabls() {
   console.log(this.form.value);
