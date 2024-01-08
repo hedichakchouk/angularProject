@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {MemberService} from "../../Services/member.service";
 import {ActivatedRoute, Router} from "@angular/router";
+import {Member} from "../../Modeles/Member";
 
 @Component({
   selector: 'app-membre-form',
@@ -13,14 +14,17 @@ export class MembreFormComponent implements  OnInit {
     // hethi l etape titsama injection du dependance
 
   }
-
+  membreGlobal!:Member ;
 form!:FormGroup;
 ngOnInit() {
   // 1 Recuperer de id  de la route
   const idcourant = this.activatedRoute.snapshot.params['id'];
   console.log(idcourant);
   if (!!idcourant) {
-    this.MS.getMemberById(idcourant) /////////
+    this.MS.getMemberById(idcourant).subscribe((a)=> {
+      this.membreGlobal=a;
+      this.intiForm1(a);
+    }) /////////
   }
   else  this.intiForm() ;//creer une inst de form et initialiser
   // si  id exeiste  => edit
@@ -32,7 +36,14 @@ ngOnInit() {
 
 
 }
-
+  intiForm1(a:Member){
+    this.form = new FormGroup({
+      cin : new FormControl(a.cin, Validators.required) ,
+      name : new FormControl(a.nom,[]) ,
+      cv : new FormControl(a.cv,[]) ,
+      type : new FormControl(a.type,[]) ,
+    })
+  }
     intiForm() {
     this.form = new FormGroup({
       cin : new FormControl(null, Validators.required) ,
