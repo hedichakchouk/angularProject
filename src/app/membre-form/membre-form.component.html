@@ -1,6 +1,14 @@
 <form [formGroup]="form" (ngSubmit)="showVariabls()">
   <div class="example-container">
 
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your ID</mat-label>
+      <input matInput placeholder="ID"  formControlName="id" >
+
+    </mat-form-field>
+  </div>
+  <div class="example-container">
+
   <mat-form-field appearance="fill">
     <mat-label>Enter your cin</mat-label>
     <input matInput placeholder="CIN"  formControlName="cin" >
@@ -21,6 +29,7 @@
 
     </mat-form-field>
   </div>
+
   <div class="example-container">
     <mat-form-field>
       <mat-label>Enter your  </mat-label>
