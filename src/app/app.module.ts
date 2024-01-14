@@ -23,6 +23,13 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatListModule} from "@angular/material/list";
 import {MatMenuModule} from "@angular/material/menu";
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ToolsComponent } from './tools/tools.component';
+import { ArticlesComponent } from './articles/articles.component';
+import { EventsComponent } from './events/events.component';
+import {FirebaseModule} from "./Firebase.module";
+import { LoginComponent } from './login/login.component';
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -30,7 +37,12 @@ import {MatMenuModule} from "@angular/material/menu";
      MembreListeComponent,
      MembreFormComponent,
      ConfirmeDialogComponent,
-     LayoutComponent
+     LayoutComponent,
+     DashboardComponent,
+     ToolsComponent,
+     ArticlesComponent,
+     EventsComponent,
+     LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +60,9 @@ import {MatMenuModule} from "@angular/material/menu";
     MatSidenavModule,
     MatToolbarModule,
     MatListModule,
-    MatMenuModule
+    MatMenuModule,
+    FirebaseModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
