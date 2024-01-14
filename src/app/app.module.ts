@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
- import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTableModule} from "@angular/material/table";
 import { MembreListeComponent } from './membre-liste/membre-liste.component';
 import {MatIconModule} from "@angular/material/icon";
@@ -18,13 +18,19 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { HttpClientModule } from '@angular/common/http';
 import { ConfirmeDialogComponent } from './confirme-dialog/confirme-dialog.component';
 import {MatDialogModule} from "@angular/material/dialog";
+import { LayoutComponent } from './layout/layout.component';
+import {MatSidenavModule} from "@angular/material/sidenav";
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatListModule} from "@angular/material/list";
+import {MatMenuModule} from "@angular/material/menu";
 
 @NgModule({
   declarations: [
     AppComponent,
      MembreListeComponent,
      MembreFormComponent,
-     ConfirmeDialogComponent
+     ConfirmeDialogComponent,
+     LayoutComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +44,11 @@ import {MatDialogModule} from "@angular/material/dialog";
     MatInputModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MatDialogModule
+    MatDialogModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
