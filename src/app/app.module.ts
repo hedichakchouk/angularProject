@@ -30,6 +30,9 @@ import { EventsComponent } from './events/events.component';
 import {FirebaseModule} from "./Firebase.module";
 import { LoginComponent } from './login/login.component';
 import {MatCardModule} from "@angular/material/card";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import { ArticleFormComponent } from './article-form/article-form.component';
+import {MatTreeModule} from "@angular/material/tree";
 
 @NgModule({
   declarations: [
@@ -42,7 +45,8 @@ import {MatCardModule} from "@angular/material/card";
      ToolsComponent,
      ArticlesComponent,
      EventsComponent,
-     LoginComponent
+     LoginComponent,
+     ArticleFormComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +66,9 @@ import {MatCardModule} from "@angular/material/card";
     MatListModule,
     MatMenuModule,
     FirebaseModule,
-    MatCardModule
+    MatCardModule,
+    MatPaginatorModule,
+    MatTreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

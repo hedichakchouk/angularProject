@@ -1,3 +1,5 @@
+import {Article} from "./pub";
+
 export interface Member {
   "id":string;
   "cin":string;
@@ -5,4 +7,5 @@ export interface Member {
   "type":string;
   "cv":string;
   "createdDate":string;
+  "tab_pub":Article[]
 }
