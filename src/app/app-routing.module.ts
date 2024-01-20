@@ -9,6 +9,7 @@ import {EventsComponent} from "./events/events.component";
 import {ArticlesComponent} from "./articles/articles.component";
 import {LoginComponent} from "./login/login.component";
 import {ArticleFormComponent} from "./article-form/article-form.component";
+import {EventCreateComponent} from "./event-create/event-create.component";
 
 const routes: Routes = [
   {
@@ -55,6 +56,11 @@ const routes: Routes = [
     path: "create",
     pathMatch: 'full',
     component: MembreFormComponent
+  },
+  {
+    path: "events/create",
+    pathMatch: 'full',
+    component: EventCreateComponent
   },
   // {
   //   path : "login",

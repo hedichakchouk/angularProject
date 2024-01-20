@@ -24,4 +24,12 @@ this.tableArticle.push(dataRecupere) ;
 return  new Observable(observer=> observer.next())
   }
 
+  deleteDeleteById(id:string ) :Observable<void> {
+  this.tableArticle= this.tableArticle.filter(item=>item.id!=id) ;
+  return new Observable(observer => observer.next());
+  // return this.httpClient.delete<void>('http://localhost:8080/api/articles/$id') ;
+}
+
+
+
 }

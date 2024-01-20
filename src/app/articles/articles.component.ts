@@ -8,6 +8,7 @@ import {ArticleService} from "../../Services/article.service";
 import {Router} from "@angular/router";
 import {MatTableDataSource} from "@angular/material/table";
 import {MatPaginator} from "@angular/material/paginator";
+import {ConfirmeDialogComponent} from "../confirme-dialog/confirme-dialog.component";
 
 @Component({
   selector: 'app-articles',
@@ -66,5 +67,23 @@ export class ArticlesComponent implements AfterViewInit  {
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+
+  delete(id:string) : void {
+    //1 ouverture de la boite
+    let dialogRef = this.dialog.open(ConfirmeDialogComponent, {
+      height: '200px',
+      width: '300px',
+    });
+
+    //2 attendre le resulat
+    dialogRef.afterClosed().subscribe((a)=>{if(a){
+      // 3  if retour ==true  => nefs5ou
+      this.as.deleteDeleteById(id).subscribe(()=>{})
+      this.dataSource.data = this.as.tableArticle ;
+    }})
+    // subscribe joux le role  d' un Listner
+
+
   }
 }

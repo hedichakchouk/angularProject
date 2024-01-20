@@ -1,4 +1,5 @@
 import {Article} from "./pub";
+import {Evenement} from "./Evenement";
 
 export interface Member {
   "id":string;
@@ -7,5 +8,6 @@ export interface Member {
   "type":string;
   "cv":string;
   "createdDate":string;
-  "tab_pub":Article[]
+  "tab_pub":Article[];
+  "tab_event":Evenement[];
 }

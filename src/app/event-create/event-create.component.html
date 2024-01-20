@@ -1,0 +1,45 @@
+<form [formGroup]="range" (ngSubmit)="showVariabls()">
+  <div class="example-container">
+
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your ID</mat-label>
+      <input matInput placeholder="id"  formControlName="id" >
+
+    </mat-form-field>
+  </div>
+  <div class="example-container">
+
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your titre </mat-label>
+      <input matInput placeholder="titre"  formControlName="titre" >
+
+    </mat-form-field>
+  </div>
+
+
+  <div class="example-container">
+    <mat-form-field>
+      <mat-label>Enter your  lieu </mat-label>
+      <input matInput placeholder="lieu " formControlName="lieu"  >
+
+    </mat-form-field>
+  </div>
+
+</form>
+<mat-form-field>
+  <mat-label>Enter a date range</mat-label>
+  <mat-date-range-input [formGroup]="range" [rangePicker]="picker">
+    <input matStartDate formControlName="start" placeholder="Start date">
+    <input matEndDate formControlName="end" placeholder="End date">
+  </mat-date-range-input>
+  <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+  <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-date-range-picker #picker></mat-date-range-picker>
+
+
+</mat-form-field>
+<button type="submit" > submit </button>
+
+
+
+<!--<p>Selected range: {{range.value | json}}</p>-->

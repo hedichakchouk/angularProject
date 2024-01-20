@@ -33,6 +33,9 @@ import {MatCardModule} from "@angular/material/card";
 import {MatPaginatorModule} from "@angular/material/paginator";
 import { ArticleFormComponent } from './article-form/article-form.component';
 import {MatTreeModule} from "@angular/material/tree";
+import { EventCreateComponent } from './event-create/event-create.component';
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatNativeDateModule} from "@angular/material/core";
 
 @NgModule({
   declarations: [
@@ -46,7 +49,8 @@ import {MatTreeModule} from "@angular/material/tree";
      ArticlesComponent,
      EventsComponent,
      LoginComponent,
-     ArticleFormComponent
+     ArticleFormComponent,
+     EventCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -68,7 +72,9 @@ import {MatTreeModule} from "@angular/material/tree";
     FirebaseModule,
     MatCardModule,
     MatPaginatorModule,
-    MatTreeModule
+    MatTreeModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -16,6 +16,22 @@
           "sourcePdf": "https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
           "date": "10/10/1999 "
         }
+      ],
+      "tab_event": [
+        {
+          "id": "1",
+          "titre": "ftour sbeh ",
+          "dateDebut": "01/01/2024",
+          "dateFin": "02/01/2024",
+          "lieu": "sfax"
+        },
+        {
+          "id": "2",
+          "titre": "sport ",
+          "dateDebut": "04/01/2024",
+          "dateFin": "06/01/2024",
+          "lieu": "gabes"
+        }
       ]
     },
     {
@@ -33,6 +49,22 @@
           "lien": " http://tbbib",
           "sourcePdf": "https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
           "date": "17/10/1999 "
+        }
+      ],
+      "tab_event": [
+        {
+          "id": "1",
+          "titre": "ftour sbeh ",
+          "dateDebut": "01/01/2024",
+          "dateFin": "02/01/2024",
+          "lieu": "sfax"
+        },
+        {
+          "id": "2",
+          "titre": "sport ",
+          "dateDebut": "04/01/2024",
+          "dateFin": "06/01/2024",
+           "lieu": "gabes"
         }
       ]
     }
@@ -94,6 +126,28 @@
       "sourcePdf": "https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
       "date": "17/10/1999 "
     }
-
+  ],
+  "events": [
+    {
+      "id": "1",
+      "titre": "ftour sbeh ",
+      "dateDebut": "01/01/2024",
+      "dateFin": "02/01/2024",
+      "lieu": "sfax"
+    },
+    {
+      "id": "2",
+      "titre": "sport ",
+      "dateDebut":"04/01/2024",
+      "dateFin": "06/01/2024",
+      "lieu": "gabes"
+    },
+    {
+      "id": "3",
+      "titre": "fitness ",
+      "dateDebut": "09/01/2024",
+      "dateFin": "10/01/2024",
+      "lieu": "sousse"
+    }
   ]
 }
