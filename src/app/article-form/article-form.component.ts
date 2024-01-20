@@ -36,7 +36,7 @@ export class ArticleFormComponent implements  OnInit{
 
   intiForm(){
     this.form = new FormGroup({
-      cin : new FormControl(null, Validators.required) ,
+      id : new FormControl(null, Validators.required) ,
       name : new FormControl(null,[]) ,
       cv : new FormControl(null,[]) ,
       type : new FormControl(null,[]) ,

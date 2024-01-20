@@ -23,6 +23,9 @@ export class ArticlesComponent {
     dialogConfig.disableClose = true;
     dialogConfig.autoFocus = true;
 
-    this.dialog.open(ArticleFormComponent, dialogConfig);
+    this.dialog.open(ArticleFormComponent,  {
+      height: '80%',
+      width: '30%',
+    });
   }
 }
