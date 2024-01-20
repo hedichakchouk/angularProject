@@ -37,16 +37,22 @@ export class ArticleFormComponent implements  OnInit{
   intiForm(){
     this.form = new FormGroup({
       id : new FormControl(null, Validators.required) ,
-      name : new FormControl(null,[]) ,
-      cv : new FormControl(null,[]) ,
       type : new FormControl(null,[]) ,
+      titre : new FormControl(null,[]) ,
+      lien : new FormControl(null,[]) ,
       date : new FormControl(null,[]) ,
       sourcePdf : new FormControl(null,[]) ,
     })
   }
 
   save() {
+     console.log(this.form.value);
+     // recuperer form .value
+    // lancer le methode fi service
+    // envoyer une requette hhtttp en mode post vers le back
+    // namlo redurection vers le page article
     this.dialogRef.close(this.form.value);
+
   }
 
   close() {
