@@ -12,6 +12,7 @@ User!:any ;
   constructor(private authService:AuthService,private router:Router ) {
     // etape d"extratction de user name et circle account
     this.authService.getUserClaims().then((user)=>{this.User = user })
+    // ligne 14 abbi l user
   }
 
   logout(){

@@ -93,61 +93,7 @@
       "lien": " http://tbbib",
       "sourcePdf": "https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
       "date": "17/10/1999 "
-    },
-    {
-      "id": "8",
-      "type": "00000000",
-      "titre": "flen",
-      "lien": " http://tbbib",
-      "sourcePdf": "https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
-      "date": "17/10/1999 "
-    },
-    {
-      "id": "9",
-      "type": "00000000",
-      "titre": "flen",
-      "lien": " http://tbbib",
-      "sourcePdf": "https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
-      "date": "17/10/1999 "
-    },
-    {
-      "id": "10",
-      "type": "00000000",
-      "titre": "flen",
-      "lien": " http://tbbib",
-      "sourcePdf": "https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
-      "date": "17/10/1999 "
-    },
-    {
-      "id": "11",
-      "type": "00000000",
-      "titre": "flen",
-      "lien": " http://tbbib",
-      "sourcePdf": "https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
-      "date": "17/10/1999 "
-    },
-    {
-      "id": "12",
-      "type": "00000000",
-      "titre": "flen",
-      "lien": " http://tbbib",
-      "sourcePdf": "https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
-      "date": "17/10/1999 "
-    },
-    {
-      "id": "13",
-      "type": "00000000",
-      "titre": "flen",
-      "lien": " http://tbbib",
-      "sourcePdf": "https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
-      "date": "17/10/1999 "
-    },  {
-      "id": "14",
-      "type": "00000000",
-      "titre": "flen",
-      "lien": " http://tbbib",
-      "sourcePdf": "https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
-      "date": "17/10/1999 "
     }
+
   ]
 }

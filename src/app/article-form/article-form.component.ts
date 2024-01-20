@@ -18,7 +18,6 @@ export class ArticleFormComponent implements  OnInit{
 
 
   ngOnInit() {
-
     this.intiForm();
   }
 
