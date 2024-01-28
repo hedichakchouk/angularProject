@@ -4,11 +4,18 @@
       "id": "123",
       "cin": "00000000",
       "nom": "hedi",
-      "type": "student ",
+      "type": "student",
       "cv": "https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
       "createdDate": "10/10/1999 ",
       "tab_pub": [
         {
+          "id": "123",
+          "type": "00000000",
+          "titre": "foulen",
+          "lien": " http://famameno",
+          "sourcePdf": "https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
+          "date": "10/10/1999 "
+        },    {
           "id": "123",
           "type": "00000000",
           "titre": "foulen",
@@ -38,7 +45,7 @@
       "id": "1234",
       "cin": "00000001",
       "nom": "bilel",
-      "type": "student",
+      "type": "teacher",
       "cv": "https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
       "createdDate": "17/12/1999",
       "tab_pub": [

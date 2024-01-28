@@ -36,6 +36,7 @@ import {MatTreeModule} from "@angular/material/tree";
 import { EventCreateComponent } from './event-create/event-create.component';
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatNativeDateModule} from "@angular/material/core";
+import {NgChartsModule} from "ng2-charts";
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import {MatNativeDateModule} from "@angular/material/core";
     MatPaginatorModule,
     MatTreeModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
